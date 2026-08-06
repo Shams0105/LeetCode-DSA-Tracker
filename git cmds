@@ -1,0 +1,56 @@
+## Part 1: Do we only use git add for new files?
+No. This is a very common misconception.
+You must use git add for both brand-new files AND files you have previously uploaded but just modified.
+
+* Git does not automatically watch your files live.
+* Think of git add like packing a cardboard box. If you edit your text file tomorrow, or write a new pattern in your notebook, you have to run git add to place those updated versions inside the box.
+
+------------------------------
+## Part 2: Does git push directly save changes globally?
+git push does upload everything globally to GitHub, but it cannot do it alone. It requires a middle step called git commit.
+Here is how the workflow actually moves your code:
+
+   1. git add (The Stage): You choose which files/changes go into your "box".
+   2. git commit (The Lock): You tape the box shut and write a label on it (your message). This saves it locally on your computer.
+   3. git push (The Delivery): You ship that locked box over the internet to your global GitHub repository.
+
+If you don't commit, git push will have nothing to send!
+------------------------------
+## Part 3: The Complete Lifecycle Sequence of Git Commands
+Here is the exact order of every major Git command from the day you start a project to your daily routine:
+
+## IMPORTANT
+
+## Phase 1: Creation (Only Done ONCE per project)
+
+* git init
+* What it does: Creates a hidden .git folder. It turns a regular folder on your computer into a local Git repository.
+* git remote add origin <URL>
+* What it does: Links your local folder to your online GitHub repository address.
+
+## Phase 2: The Daily Routine (Done EVERY day)
+
+* git status
+* What it does: Shows you a list of files you modified or created (they will appear in red text).
+* git add . (or git add filename)
+* What it does: Stages your changes. (Turns the files from red text to green text).
+* git commit -m "Your message"
+* What it does: Permanently saves a snapshot of those changes on your hard drive with a description.
+* git push
+* What it does: Sends your local commits over the internet to your public GitHub profile.
+
+------------------------------
+## Your New Daily Routine for Your Two Files
+Since you now have two files (Daily_Progress_Tracker and patterns.ipynb), your daily wrap-up command is super easy. Just run:
+
+git add .
+git commit -m "Day 3: Updated logs and solved pattern problems in Jupyter"
+git push
+
+The dot . will automatically grab both your text file changes and your notebook changes at the exact same time!
+Now that your notebook kernel is working and you know the commands, let me know:
+
+* Have you tried running your first daily push with both files using git add . yet?
+
+Tell me if it goes through cleanly or throws any errors!
+
