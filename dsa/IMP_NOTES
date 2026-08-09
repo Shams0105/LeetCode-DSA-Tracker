@@ -1,0 +1,19 @@
+
+ASCII VALUES IN PROGRAMMING
+
+#From pattern 15 in patterns.ipynb
+char(65) = 'A'
+char(66) = 'B' 
+67 is C , 68 is D ........ & so on
+#Identify the syntax it is "print(chr(chr_value))" where chr_value is the ASCII value of the character you want to print. in py
+
+Similarly in JAVA:
+currentChar = 65
+System.out.print((char) currentChar + " ");
+here we need to convert 
+In Java, (char) is known as a type casting operator(specifically, explicit type casting or narrowing conversion).
+It is used to forcefully convert one data type into another.
+In your code, currentChar is declared as an integer: int currentChar = 65;.If you run System.out.print(currentChar);, Java will literally print the number 65.By placing (char) right in front of it, you tell Java: "Do not treat this number as an integer. Look up its value on the ASCII/Unicode table and treat it as a text character instead."
+
+---x-------------x----------x----------x----------x---------------X-----------x--------x----------x------x
+
