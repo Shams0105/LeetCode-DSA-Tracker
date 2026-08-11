@@ -11,6 +11,8 @@ public class basic_maths {
         //runCountDigits();
         //runReverseNumber();
         //runCheckPalindrome();
+        //runCheckArmstrong();
+        //runPrintAllDivisors();
 
     }
     //Functions describing code for basic maths.
@@ -26,6 +28,7 @@ public class basic_maths {
             count++;
             n = n / 10;
         }
+        sc.close();
         System.out.println("Number of Digits are: " + count);
 
     
@@ -68,6 +71,54 @@ public class basic_maths {
             return false;
         } 
     }
+    //Armstrong Number
+    public static void runCheckArmstrong() {
+        int n = 153;
+        int temp = n;
+        int original = n;
+
+        // Step 1: Count the total number of digits (the power)
+        int count = 0;
+        while(temp>0){
+            temp = temp/10;
+            count++;
+        }
+        System.out.println(count);
+
+        //Calculate the sum of digits raised to that power
+        int sum = 0;
+        while(n>0){
+            int lastDigit = n % 10 ;
+            sum = sum + (int)Math.pow(lastDigit , count);
+
+            n = n/10;
+
+
+        }
+        //Check if it matches the original no
+        if(sum == original){
+            System.out.println("The no " +original + " is armstrong no");
+        }
+        else{
+            System.out.println(original + "  Is not an armstrong no");
+        }
+    }
+
+
+    //Printing all facotrs 
+    public static void runPrintAllDivisors() {
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Enter your no");
+        int n = sc2.nextInt();
+        System.out.println("Your no is " +n);
+        for(int i = 1 ; i <= n ; i++){
+            if(n % i == 0){
+            
+                System.out.println(i);
+            }
+        }  
+    }
+
     //
 
 
