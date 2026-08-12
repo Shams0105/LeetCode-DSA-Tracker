@@ -3,17 +3,19 @@ public class basic_maths {
     public static void main(String[] args) { //Entry point of every java code
         
         System.out.println("-----Running Basic Maths codes------");
-        System.out.println("Is Palindrome: " + runCheckPalindrome()); //necessary for palindrome boolean return 
 
+        
         //Java runs the code insivde psvm sequentially
         //uncomment the code u wish to run
 
         //runCountDigits();
         //runReverseNumber();
-        //runCheckPalindrome();
+        //System.out.println("Is Palindrome: " + runCheckPalindrome()); //necessary for palindrome boolean return 
+
         //runCheckArmstrong();
         //runPrintAllDivisors();
-
+        //isPrime();
+        //System.out.println("GCD is: " + runGCD()); 
     }
     //Functions describing code for basic maths.
 
@@ -117,9 +119,43 @@ public class basic_maths {
                 System.out.println(i);
             }
         }  
+        sc2.close();
     }
 
-    //
+    //Prime no
+    
+     public static boolean isPrime() {
+        // Edge case: Numbers less than or equal to 1 are not prime
+        int n = 17;
+        if (n <= 1) {
+            return false;
+        }
 
+        // Check for any factors from 2 up to the square root of n (i * i <= n)
+        // This is Striver's optimal O(sqrt(N)) method
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                return false; // Found a factor, so it is NOT prime
+            }
+        }
+
+        return true; // No factors found, it is prime!
+    }
+    public static int runGCD() {
+        int n1 = 20;
+        int n2 = 40;
+    
+        for(int i = Math.min(n1,n2) ; i >= 1;i--){
+
+            if(n1%i == 0 && n2%i == 0){
+                return i;
+                
+            }
+        }
+        return 1;
+
+
+        
+    }
 
 }
