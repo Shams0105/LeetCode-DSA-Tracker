@@ -1,5 +1,5 @@
 package Recursion;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class BasicRecursionProblems {
     //In Java, you can only call a function inside System.out.println() (sout)

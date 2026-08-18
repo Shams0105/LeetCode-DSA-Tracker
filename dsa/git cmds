@@ -54,3 +54,88 @@ Now that your notebook kernel is working and you know the commands, let me know:
 
 Tell me if it goes through cleanly or throws any errors!
 
+---x-------------x----------x----------x----------x---------------X-----------x--------x----------x------x
+---x-------------x----------x----------x----------x---------------X-----------x--------x----------x------x
+
+Here is a complete, master reference table of all core Git commands available to developers. This covers everything from basic daily tasks to advanced branching, syncing, and undoing mistakes.
+## 1. Repository Creation & Setup
+These commands initialize new projects or copy existing ones.
+
+| Command | Function / Use Case |
+|---|---|
+| git init | Creates a brand-new, empty local Git repository in your current folder. |
+| git clone <url> | Downloads an existing project and its entire version history from GitHub to your computer. |
+
+## 2. The Staging Area & Status
+These commands let you track, view, and organize changes before saving them.
+
+| Command | Function / Use Case |
+|---|---|
+| git status | Shows which files are modified, deleted, or untracked (shows red/green status text). |
+| git diff | Displays line-by-line changes made to your files that haven't been staged yet. |
+| git add <file> | Stages a specific file, preparing it to be saved in the next snapshot. |
+| git add . | Stages all modified, new, and deleted files across your entire project folder. |
+| git rm <file> | Deletes a file from your computer and stages its removal in Git. |
+| git mv <old> <new> | Renames or moves a file and automatically stages the change. |
+
+## 3. Saving & History
+These commands permanently record snapshots and let you look back at your progress.
+
+| Command | Function / Use Case |
+|---|---|
+| git commit -m "msg" | Saves your staged changes locally with a descriptive message. |
+| git commit --amend | Tweaks your very last commit (add forgotten files or fix a typo in the message). |
+| git log | Displays your entire commit history (author, date, commit hashes, and messages). |
+| git log --oneline | Shows a condensed, clean, one-line version of your commit history. |
+| git blame <file> | Shows line-by-line who modified a file last and in which commit. |
+
+## 4. Branching & Merging
+These commands allow you to work on multiple features or problem-solving approaches in isolation without messing up your main project code.
+
+| Command | Function / Use Case |
+|---|---|
+| git branch | Lists all local branches in your repository. |
+| git branch <name> | Creates a new branch with a custom name. |
+| git checkout <name> or git switch <name> | Switches your working workspace to a different branch. |
+| git checkout -b <name> or git switch -c <name> | Creates a brand-new branch and switches to it instantly. |
+| git merge <branch> | Combines the history and code of the specified branch into your current active branch. |
+| git branch -d <name> | Deletes a branch safely once its code has been merged. |
+
+## 5. Sharing & Syncing (Remotes)
+These commands manage connections between your local machine and remote servers like GitHub.
+
+| Command | Function / Use Case |
+|---|---|
+| git remote add <name> <url> | Connects your local repository to an online repository URL (usually named origin). |
+| git remote -v | Lists all connected online repository URLs. |
+| git push <remote> <branch> | Uploads your local commits to your online GitHub repository branch. |
+| git pull | Fetches the latest updates from GitHub and automatically merges them into your computer. |
+| git fetch | Downloads updates from GitHub so you can see them, but does not alter your local files. |
+
+## 6. Undoing Changes & Fixing Mistakes
+These commands help you recover your code when things break or if you want to scrap an approach.
+
+| Command | Function / Use Case |
+|---|---|
+| git checkout -- <file> or git restore <file> | Discards unsaved edits in a file and reverts it to the last committed state. |
+| git reset HEAD <file> or git restore --staged <file> | Unstages a file (removes it from the "box") but keeps your text edits intact. |
+| git reset --soft HEAD~1 | Undoes your last commit, keeping your files edited and ready to re-commit. |
+| git reset --hard HEAD~1 | Danger Zone: Permanently destroys your last commit and wipes out all code changes. |
+| git revert <commit-hash> | Safely creates a brand-new commit that does the exact opposite of an old mistake. |
+
+## 7. Temporary Storage (Stashing)
+These commands allow you to temporarily shelf unfinished work when you need to switch tasks quickly without committing half-written code.
+
+| Command | Function / Use Case |
+|---|---|
+| git stash | Temporarily hides your uncommitted changes so you have a completely clean folder. |
+| git stash pop | Brings back your hidden changes exactly where you left off. |
+| git stash list | Shows a list of all your saved stash points. |
+
+------------------------------
+If you ever want to see an example of how one of these advanced commands (like branching or stashing) works while managing your LeetCode tracker, let me know:
+
+* What command or concept looks confusing?
+
+I can give you a simple scenario showing exactly how to use it!
+
