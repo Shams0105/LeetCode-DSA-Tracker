@@ -78,11 +78,106 @@ Step 2 — Total distance to cover
 
 Step 3 — Apply T = D/S:
  henc ,   T = 400  / 16.67  = approx 24s
----x-------------x----------x----------x----------x---------------X-----------x--------x----------x------x
----x-------------x----------x----------x----------x---------------X-----------x--------x----------x------x
+---x-------------x----------x----------x----------x---------------X-----------x--------x----------x------
+---x-------------x----------x----------x----------x---------------X-----------x--------x----------x------
 
 
-2] PERCENTAGES:-
+2] Time & Work:-
+## Core Concept
+
+Time & Work is really just Time-Speed-Distance in disguise — instead of "distance," we track "work done," and instead of "speed," we track "rate of work." Same skeleton, different label.
+
+$$\text{Work} = \text{Rate} \times \text{Time} \quad \Rightarrow \quad \text{Rate} = \frac{\text{Work}}{\text{Time}} \quad \Rightarrow \quad \text{Time} = \frac{\text{Work}}{\text{Rate}}$$
+
+## The One Trick That Solves 90% of Problems
+
+**Always assume Total Work = LCM of the given times.**
+
+Why? Because if A takes 10 days and B takes 15 days, assuming total work = LCM(10,15) = 30 units makes everyone's daily rate a clean whole number instead of an ugly fraction. This is the single biggest speed-up trick in this entire topic.
+
+**Efficiency (work done per day) = Total Work / Time taken**
+
+## Worked Dry Run — The LCM Trick in Action
+
+**Problem:** A can do a piece of work in 10 days, B in 15 days. How long will they take working together?
+
+**Step 1 — Assume total work = LCM(10, 15) = 30 units**
+
+**Step 2 — Find individual efficiency:**
+- A's efficiency = 30/10 = 3 units/day
+- B's efficiency = 30/15 = 2 units/day
+
+**Step 3 — Combined efficiency = 3 + 2 = 5 units/day**
+
+**Step 4 — Time together = Total work / Combined efficiency = 30/5 = 6 days**
+
+Notice: no fractions anywhere. That's the power of the LCM assumption.
+
+## Key Formula Shortcuts
+
+**If A and B together do a job in $x$ days, and A alone in $a$ days**, then B alone takes:
+B = ax / a - x
+
+**Direct combined-time formula** (if you don't want to do LCM manually), for A taking $a$ days and B taking $b$ days:
+Time together = ab / a - b
+
+*(Try it on the dry run above: 10×15/(10+15) = 150/25 = 6 days ✓ — matches.)*
+
+For **three people** A, B, C with individual times $a, b, c$:
+time together = 1 / 1/a + 1/b + 1/c
+
+## Efficiency Ratio Trick — Very Common Trap
+
+If A is **twice as efficient** as B, don't think "A takes half the time" and get confused about direction. Instead:
+
+**Efficiency and Time are inversely proportional.**
+
+So if efficiency ratio A:B = 2:1, then time ratio A:B = 1:2 (A takes less time since A is more efficient).
+
+**Dry run:** A is thrice as efficient as B. If B takes 24 days alone, how long does A take?
+- Efficiency ratio A:B = 3:1 → Time ratio A:B = 1:3
+- B's time = 24, so A's time = 24/3 = **8 days**
+
+## Work + Wages Problems
+
+When people are paid based on work contribution, wages are split in the **ratio of work done** (not time spent). Work done = Efficiency × Time worked.
+
+**Dry run:** A and B can finish a job in 10 and 15 days respectively. They work together and get paid ₹500. Find A's share.
+- Efficiency ratio A:B = (1/10):(1/15) = 3:2 (cross-multiplying the reciprocals)
+- A's share = (3/5) × 500 = **₹300**
+
+## Pipes & Cisterns — Same Topic, Different Costume
+
+This is Time & Work with a twist: an **outlet pipe (drain) does negative work.**
+
+- Inlet pipe fills tank → positive rate
+- Outlet pipe empties tank → negative rate
+- Net rate = (sum of inlet rates) − (sum of outlet rates)
+
+**Dry run:** Pipe A fills a tank in 6 hrs, Pipe B empties it in 8 hrs. Both opened together — time to fill?
+- Assume tank capacity = LCM(6,8) = 24 units
+- A's rate = 24/6 = +4 units/hr
+- B's rate = 24/8 = −3 units/hr (draining)
+- Net rate = 4 − 3 = 1 unit/hr
+- Time to fill = 24/1 = **24 hours**
+
+## Work Done in Alternate Days / Partial Work Problems
+
+When people work on alternate days (e.g., A on day 1, B on day 2, A on day 3...), don't overthink — just track **work done per pair of days** and see how many full cycles fit, then handle the remainder separately.
+
+**Quick approach:** Find combined work done in one full cycle (e.g., 2 days if alternating), divide total work by that, get number of complete cycles, then calculate remaining work with whoever's turn is next.
+
+## Common Traps to Watch For
+
+1. **"A is thrice as good a workman as B"** = efficiency ratio, not time ratio directly — invert it for time.
+2. Days ratio and efficiency ratio are **always inverses of each other** — never mix these up under time pressure.
+3. In wages problems, splitting by time worked instead of work done is the #1 mistake.
+4. Always double check whether the problem wants **work done together** or **time saved** — these are commonly confused in wording.
+
+That's the full toolkit for Time & Work. When you're ready, try a problem — even a basic one — and share your approach so I can see where to sharpen it.
+
+---x-------------x----------x----------x----------x---------------X-----------x--------x----------x------
+---x-------------x----------x----------x----------x---------------X-----------x--------x----------x------
 
 
  
