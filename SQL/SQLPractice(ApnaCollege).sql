@@ -153,7 +153,7 @@ select * from student;
 delete from student
 where marks < 50;
 
--- ALTER CMDs 9 to change the schema ir database design)
+-- ALTER CMDs to change the schema in database design)
 -- 1] ADD a column (adds a column to the database)
 alter table student
 add column age INT;
