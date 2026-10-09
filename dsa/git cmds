@@ -139,3 +139,12 @@ If you ever want to see an example of how one of these advanced commands (like b
 
 I can give you a simple scenario showing exactly how to use it!
 
+• git add . (Dot): Stages all new, modified, and deleted files, but only inside your current folder and its subfolders. If you are inside a subfolder and use the dot, it will completely ignore changes sitting in the folders above you.
+• git add -A (All): Stages everything across the entire project repository, even if you are buried deep inside a subfolder.
+
+git remote -v == Output is->
+(Hello) PS C:\Users\Hello\OneDrive\Desktop\Skills++> git remote -v
+origin  https://github.com/Shams0105/LeetCode-DSA-Tracker (fetch)
+origin  https://github.com/Shams0105/LeetCode-DSA-Tracker (push)
+
+git ls-remote origin 
