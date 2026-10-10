@@ -1,0 +1,4 @@
+Shams is a brilliant guy
+this is to test file.open()
+This is to check the code in 03_more_file_functions.py
+readline() n all
