@@ -25,4 +25,4 @@ class student():
 
 shams = student("SHAMS" ,13000000 , "Python") #hence using constructor we can directly pass the values here
 print(shams.name , shams.salary , shams.lang)
- 
+shams.getInfo()  #Manual call unlike __init__ () --> DUnder method
