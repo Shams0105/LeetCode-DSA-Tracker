@@ -19,7 +19,7 @@ def game():
         if(hiscore == ""):
             hiscore = 0
         else:
-            hiscore = int(hiscore)
+            hiscore = int(hiscore)  #f.read / write returns string so we need to convert it to int
     print(f"previous/your hi-score is {hiscore}")
 
     #Logic to update the hi-score if the current score is greater than the previous hi-score
