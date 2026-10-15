@@ -17,12 +17,12 @@ class student():
     def __init__(self , name , salary , lang):    #Constructor
         self.name = name
         self.salary = salary
-        self.lang = self.lang
+        self.lang = lang
         print("Object creation using dunder method __init__() called auto")
 
 
 
 
-shams = student("SHAMS" ,13000000 , "Python") #hence using constructor we can directly pass the values here
+shams = student("SHAMS" ,13000000 , "JS") #hence using constructor we can directly pass the values here
 print(shams.name , shams.salary , shams.lang)
 shams.getInfo()  #Manual call unlike __init__ () --> DUnder method

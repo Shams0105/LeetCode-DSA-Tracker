@@ -34,5 +34,5 @@ class manager(programmer):
 # o = programmer()
 # print(o.a ,o.b) 
 
-o = manager()   #manager class executes & prints both constructors using super keyword init
+o = manager()   #manager class executes & prints both classes's constructors using super keyword init
 print(o.a , o.b ,o.c) 
