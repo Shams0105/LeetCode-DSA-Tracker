@@ -12,16 +12,18 @@ import random
 
 no = random.randint(1,100)
 a = -1   #for a!=no for the while loop to be true at 1st iteration
-guesses = 0
+guesses = 1
 while(a != no):
-    guesses += 1    #to count the no of guesses taken 
+    
     a = int(input("Guess the number(btw 1-100) : "))
 
     if(a > no):
         print(f"Your guessed number {a} is higher , try guessing a lower number")
+        guesses+=1
 
     elif(a < no):
         print(f"Your guessed number {a} is too low , try guessing higher")
+        guesses += 1    #to count the no of guesses taken 
 
 print(f"Congrats you guessed it right {no}, you took {guesses} number of guesses")
 
