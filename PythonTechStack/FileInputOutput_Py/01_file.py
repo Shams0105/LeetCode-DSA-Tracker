@@ -46,5 +46,12 @@ While to read the file it requires
 (Hello) PS C:Users Hello OneDrive Desktop Skills++> wrong one
  c:/Users/Hello/OneDrive/Desktop/Skills++/PythonTechStack/FileInputOutput_Py/01_file.py
 
+#NOTE Resolved this later solution:
 
+#if u wanna enter a specific folder to work in that path in terminal 
+# u just need to open that particular folder & use
+# shift + right click --> Open with code & u are in
+# Now that with open & file i/o issue is resolved using this
+# no need to use pathlib module & stuff
+now u can safely use above cmntd code using these steps
 '''
